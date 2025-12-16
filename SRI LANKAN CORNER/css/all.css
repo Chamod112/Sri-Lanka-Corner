@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.logo img {
+    height: 50px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 0;
+}
+.nav-links a.active {
+    border-bottom: 2px solid black;
+}
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: white;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+.product-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.shop-btn {
+    display: inline-block;
+    background: #d4af37;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.location-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background: rgb(37, 36, 36);
+}
+
+.location-section, h3, p{
+    color: #ccc;
+}
+.location-card {
+    text-align: center;
+    width: 300px;
+}
+.location-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.location-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <title>Cake Order Page</title>
+    <link rel="stylesheet" href="C:\Users\DELL\OneDrive\Desktop\hirusha\css\order.css">
+    
+</head>
+<body>
+
+ <header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <nav class="nav-links">
+        <a href="C:\Users\DELL\OneDrive\Desktop\hirusha\html\home.html">HOME</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\hirusha\html\order.html">ORDER ONLINE</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\hirusha\html\about.html">ABOUT US</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\hirusha\html\contact.html">CONTACT US</a>
+    </nav>
+    <div class="search-cart">
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+        <div class="cart">
+            🛒<span>0</span>
+        </div>
+    </div>
+</header>
+     
+<h1>Order Your Cake</h1> 
+<form id="cakeOrderForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    
+    <label for="flavor">Choose a Flavor:</label>
+    <select id="flavor" required>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vanilla">Vanilla</option>
+        <option value="Red Velvet">Red Velvet</option>
+        <option value="Lemon">Lemon</option>
+    </select>
+    
+    <label for="size">Choose a Size:</label>
+    <select id="size" required>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+    </select>
+    
+    <label for="message">Message on Cake:</label>
+    <input type="text" id="message">
+    
+    <button type="button" class="btu" onclick="submitOrder()">Place Order</button>
+</form>
+
+    
+
+    <script>
+        function submitOrder() {
+            const name = document.getElementById('name').value;
+            const flavor = document.getElementById('flavor').value;
+            const size = document.getElementById('size').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && flavor && size) {
+                alert(`Thank you, ${name}! Your ${size} ${flavor} cake has been ordered. Message: "${message}"`);
+            } else {
+                alert('Please fill out all required fields.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+

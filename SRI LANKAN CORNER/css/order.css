@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffcefd;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.logo img {
+    height: 50px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 0;
+}
+.nav-links a.active {
+    border-bottom: 2px solid black;
+}
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: white;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+form{
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, select, button.btu {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btu{
+    background-color: #f28b82;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button.but:hover {
+    background-color: #d9534f;
+}
+
+
+       
+
+
+
+
+
+
+
+
+
